@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>FLORA | 組合套裝區</title>
-    <link rel="stylesheet" href="../about>.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="top-bar">
         全館滿 $1,500 免運 ｜ 新會員首購享 9 折優惠
     </div>
-
     <header>
         <div class="header-container">
             <a href="../index.html" class="logo">
@@ -42,22 +40,22 @@
                 <li><a href="seasonal.html">季節限定</a></li>
             </ul>
         </li>
-        <li><a href="../about.html">關於我們</a></li>
+        <li><a href="#about">關於我們</a></li>
         <li><a href="../QA.html">常見問題</a></li>
     </ul>
 </nav>
-            <div class="header-icons">
-            <div class="user-menu-container">
-                <span class="user-icon">👤</span>
-                <ul class="user-dropdown">
-                    <li><a href="../login.html">登入 / 註冊</a></li>
-                    <li><a href="../member.html">會員中心</a></li>
-                </ul>
-            </div>
-            <a href="../cart.html" style="color: inherit; text-decoration: none;">
-                <span>🛒</span>
-            </a>
-            </div>
+<div class="header-icons">
+    <div class="user-menu-container">
+        <span class="user-icon">👤</span>
+        <ul class="user-dropdown">
+            <li><a href="../login.html">登入 / 註冊</a></li>
+            <li><a href="../member.html">會員中心</a></li>
+        </ul>
+    </div>
+    <a href="../cart.html" style="color: inherit; text-decoration: none;">
+        <span>🛒</span>
+    </a>
+</div>
     </header>
 <div class="main-layout">
         <aside class="sidebar">
@@ -65,7 +63,6 @@
             <ul>
                 <li><a href="#beginner-kits"><strong>新手友善</strong></a></li>
                 <li><a href="#themed-sets"><strong>主題多入組</strong></a></li>
-                <li><a href="#space-solutions"><strong>空間提案</strong></a></li>
             </ul>
         </aside>
 
@@ -74,35 +71,15 @@
             <section id="beginner-kits" class="category-section">
                 <h2 class="category-title">新手友善</h2>
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">🎁</div>
+                    <div class="product-card" onclick="location.href='product detail/productsets.html?id=starter_kit';">
+                        <div class="product-image"><img src="../images/新手入門全配包.jpg" alt="新手入門全配包"></div>
                         <div class="product-info">
                             <div class="product-name">新手入門全配包</div>
                             <div class="product-price">NT$ 890</div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section id="themed-sets" class="category-section">
-                <h2 class="category-title">主題多入組</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">🌵</div>
-                        <div class="product-info">
-                            <div class="product-name">多肉植物 3 入組</div>
-                            <div class="product-price">NT$ 450</div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">📦</div>
-                        <div class="product-info">
-                            <div class="product-name">多肉植物 6 入派對組</div>
-                            <div class="product-price">NT$ 850</div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🌱</div>
+                    <div class="product-card" onclick="location.href='product detail/productsets.html?id=herb_diy';">
+                        <div class="product-image"><img src="../images/香草栽培DIY套組.jpg" alt="香草栽培DIY套組"></div>
                         <div class="product-info">
                             <div class="product-name">香草栽培 DIY 套組</div>
                             <div class="product-price">NT$ 380</div>
@@ -111,27 +88,28 @@
                 </div>
             </section>
 
-            <section id="space-solutions" class="category-section">
-                <h2 class="category-title">空間提案</h2>
+            <section id="themed-sets" class="category-section">
+                <h2 class="category-title">主題多入組</h2>
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">🛋️</div>
+                    <div class="product-card" onclick="location.href='product detail/productsets.html?id=succulent_4set';">
+                        <div class="product-image"><img src="../images/多肉植物4入組.jpg" alt="多肉植物4入組"></div>
                         <div class="product-info">
-                            <div class="product-name">居家綠植＋植架組</div>
-                            <div class="product-price">NT$ 1,580</div>
+                            <div class="product-name">多肉植物 4 入組</div>
+                            <div class="product-price">NT$ 550</div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">🌬️</div>
+                    <div class="product-card" onclick="location.href='product detail/productsets.html?id=succulent_9set';">
+                        <div class="product-image"><img src="../images/多肉植物9入組.jpg" alt="多肉植物9入組"></div>
                         <div class="product-info">
-                            <div class="product-name">療癒小桌景</div>
-                            <div class="product-price">NT$ 520</div>
+                            <div class="product-name">多肉植物 9 入組</div>
+                            <div class="product-price">NT$ 1,200</div>
                         </div>
                     </div>
                 </div>
             </section>
 
-        </main> </div> <footer>
+        </main>
+    </div><footer>
         <div class="footer-content">
             <p>© 2024 FLORA. All Rights Reserved.</p>
             <p>用心栽培每一份綠意，溫柔守護每個空間</p>

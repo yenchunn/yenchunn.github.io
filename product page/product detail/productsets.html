@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORA | 商品詳情</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="product-detail.css">
+</head>
+<body>
+<body>
+    <div class="top-bar">
+        全館滿 $1,500 免運 ｜ 新會員首購享 9 折優惠
+    </div>
+    <header>
+        <div class="header-container">
+            <a href="../../index.html" class="logo">
+                <img src="../../images/LOGO.png" alt="FLORA">
+            </a>
+            <nav>
+    <ul>
+        <li>
+            <a href="#">植物養護</a>
+            <ul class="dropdown-menu">
+                <li><a href="../plant.html">植物</a></li>
+                <li><a href="../soil.html">介質肥料</a></li>
+                <li><a href="../tools.html">工具</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">風格裝飾</a>
+            <ul class="dropdown-menu">
+                <li><a href="../containers.html">盆器</a></li>
+                <li><a href="../homedecor.html">家居擺飾</a></li>
+                <li><a href="../accessories.html">療癒小物</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">專屬企劃</a>
+            <ul class="dropdown-menu">
+                <li><a href="../sets.html">組合套裝</a></li>
+                <li><a href="../beginners.html">新手推薦</a></li>
+                <li><a href="../seasonal.html">季節限定</a></li>
+            </ul>
+        </li>
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="../../QA.html">常見問題</a></li>
+    </ul>
+</nav>
+<div class="header-icons">
+    <div class="user-menu-container">
+        <span class="user-icon">👤</span>
+        <ul class="user-dropdown">
+            <li><a href="../../login.html">登入 / 註冊</a></li>
+            <li><a href="../../member.html">會員中心</a></li>
+        </ul>
+    </div>
+    <a href="../../cart.html" style="color: inherit; text-decoration: none;">
+        <span>🛒</span>
+    </a>
+</div>
+    </header>
+
+    <div class="detail-container">
+        <div class="product-main-grid">
+            <div class="p-image">
+                <img id="p-img" src="" alt="商品圖片">
+            </div>
+            <div class="p-name" id="p-name">載入中...</div>
+            <div class="p-desc" id="p-desc">正在讀取資訊...</div>
+            <div class="p-price" id="p-price">--</div>
+
+            <div class="p-actions">
+                <div class="quantity-box">
+                    <label>數量</label>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" id="qty-minus">-</button>
+                        <span class="qty-display" id="qty-num">1</span>
+                        <button class="qty-btn" id="qty-plus">+</button>
+                    </div>
+                </div>
+                <button class="add-cart-btn">加入購物車</button>
+            </div>
+        </div>
+
+    <div class="reviews-container">
+            <h3 class="reviews-header">顧客評論 (4)</h3>
+            <div class="reviews-list" id="reviews-list">
+                <div class="review-card"><div>⭐⭐⭐⭐⭐</div><strong>Jenny</strong><p style="color:#666;">新手包真的很方便，一次買齊所有工具。</p></div>
+                <div class="review-card"><div>⭐⭐⭐⭐⭐</div><strong>Paul</strong><p style="color:#666;">多肉植物每顆都很健康，包裝很用心。</p></div>
+                <div class="review-card hidden"><div>⭐⭐⭐⭐</div><strong>Linda</strong><p style="color:#666;">香草種子發芽率很高，期待收成。</p></div>
+                <div class="review-card hidden"><div>⭐⭐⭐⭐⭐</div><strong>Sam</strong><p style="color:#666;">9入組很划算，送禮自用兩相宜。</p></div>
+            </div>
+            <button class="more-reviews-btn" id="toggle-reviews-btn">查看更多評論 ﹀</button>
+        </div>
+
+        <div class="recommendations">
+            <h3 style="font-size:1.5rem; color:#333; margin-bottom:20px;">其他推薦</h3>
+            <div class="carousel-wrapper">
+                <button class="nav-btn" id="prev-btn">❮</button>
+                <div class="carousel-window">
+                    <div class="carousel-track" id="track">
+                        <div class="mini-card" onclick="location.href='productsets.html?id=starter_kit'"><img src="../../images/新手入門全配包.jpg"><div class="mini-info"><div class="mini-name">新手入門全配包</div><div class="mini-price">NT$ 890</div></div></div>
+                        <div class="mini-card" onclick="location.href='productsets.html?id=succulent_4set'"><img src="../../images/多肉植物4入組.jpg"><div class="mini-info"><div class="mini-name">多肉植物 4 入組</div><div class="mini-price">NT$ 550</div></div></div>
+                        <div class="mini-card" onclick="location.href='productsets.html?id=succulent_9set'"><img src="../../images/多肉植物9入組.jpg"><div class="mini-info"><div class="mini-name">多肉植物 9 入組</div><div class="mini-price">NT$ 1,200</div></div></div>
+                        <div class="mini-card" onclick="location.href='productsets.html?id=herb_diy'"><img src="../../images/香草栽培DIY套組.jpg"><div class="mini-info"><div class="mini-name">香草栽培 DIY 套組</div><div class="mini-price">NT$ 380</div></div></div>
+                    </div>
+                </div>
+                <button class="nav-btn" id="next-btn">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="product-data.js"></script>
+
+    <footer><div class="footer-content"><p>© 2025 FLORA. All Rights Reserved.</p></div></footer>
+
+</body>
+</html>

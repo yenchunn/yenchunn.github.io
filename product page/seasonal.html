@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <title>FLORA | 季節專區</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../about>.css">
 </head>
 <body>
-    <div class="top-bar">
+   <div class="top-bar">
         全館滿 $1,500 免運 ｜ 新會員首購享 9 折優惠
     </div>
-
     <header>
         <div class="header-container">
             <a href="../index.html" class="logo">
@@ -42,22 +40,22 @@
                 <li><a href="seasonal.html">季節限定</a></li>
             </ul>
         </li>
-        <li><a href="../about.html">關於我們</a></li>
+        <li><a href="#about">關於我們</a></li>
         <li><a href="../QA.html">常見問題</a></li>
     </ul>
 </nav>
-            <div class="header-icons">
-            <div class="user-menu-container">
-                <span class="user-icon">👤</span>
-                <ul class="user-dropdown">
-                    <li><a href="../login.html">登入 / 註冊</a></li>
-                    <li><a href="../member.html">會員中心</a></li>
-                </ul>
-            </div>
-            <a href="../cart.html" style="color: inherit; text-decoration: none;">
-                <span>🛒</span>
-            </a>
-            </div>
+<div class="header-icons">
+    <div class="user-menu-container">
+        <span class="user-icon">👤</span>
+        <ul class="user-dropdown">
+            <li><a href="../login.html">登入 / 註冊</a></li>
+            <li><a href="../member.html">會員中心</a></li>
+        </ul>
+    </div>
+    <a href="../cart.html" style="color: inherit; text-decoration: none;">
+        <span>🛒</span>
+    </a>
+</div>
     </header>
 <div class="main-layout">
         <aside class="sidebar">
@@ -65,9 +63,7 @@
             <ul>
                 <li><a href="#christmas"><strong>聖誕植栽</strong></a></li>
                 <li><a href="#spring"><strong>春季花卉</strong></a></li>
-                <li><a href="#summer"><strong>夏日耐曬植物</strong></a></li>
-                <li><a href="#nordic"><strong>北歐白系特輯</strong></a></li>
-                <li><a href="#office"><strong>辦公室桌面</strong></a></li>
+                <li><a href="#summer"><strong>夏日耐曬</strong></a></li>
             </ul>
         </aside>
 
@@ -76,46 +72,55 @@
             <section id="christmas" class="category-section">
                 <h2 class="category-title">聖誕植栽 Christmas Specials</h2>
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">🌺</div>
-                        <div class="product-info">
-                            <div class="product-name">經典聖誕紅 (5吋)</div>
-                            <div class="product-price">NT$ 150</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=holly';">
+                        <div class="product-image"><img src="../images/冬青.png" alt="冬青"></div>
+                        <div class="product-info"><div class="product-name">冬青</div><div class="product-price">NT$ 450</div></div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">🌲</div>
-                        <div class="product-info">
-                            <div class="product-name">諾福克松 (迷你聖誕樹)</div>
-                            <div class="product-price">NT$ 480</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=juniper';">
+                        <div class="product-image"><img src="../images/圓柏.png" alt="圓柏"></div>
+                        <div class="product-info"><div class="product-name">圓柏 (聖誕樹型)</div><div class="product-price">NT$ 580</div></div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">⭕</div>
-                        <div class="product-info">
-                            <div class="product-name">松果聖誕花圈</div>
-                            <div class="product-price">NT$ 680</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=christmas_cactus';">
+                        <div class="product-image"><img src="../images/聖誕仙人掌.png" alt="聖誕仙人掌"></div>
+                        <div class="product-info"><div class="product-name">聖誕仙人掌</div><div class="product-price">NT$ 250</div></div>
+                    </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=poinsettia';">
+                        <div class="product-image"><img src="../images/聖誕紅.png" alt="聖誕紅"></div>
+                        <div class="product-info"><div class="product-name">聖誕紅</div><div class="product-price">NT$ 150</div></div>
+                    </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=norfolk_pine';">
+                        <div class="product-image"><img src="../images/諾福克島松.png" alt="諾福克島松"></div>
+                        <div class="product-info"><div class="product-name">諾福克島松</div><div class="product-price">NT$ 680</div></div>
                     </div>
                 </div>
             </section>
 
             <section id="spring" class="category-section">
-                <h2 class="category-title">春季花卉 Spring Blooms</h2>
+                <h2 class="category-title">春季預定 Spring Blooms</h2>
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">🌷</div>
-                        <div class="product-info">
-                            <div class="product-name">荷蘭鬱金香盆栽</div>
-                            <div class="product-price">NT$ 350</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=marguerite';">
+                        <div class="product-image"><img src="../images/瑪格麗特.png" alt="瑪格麗特"></div>
+                        <div class="product-info"><div class="product-name">瑪格麗特</div><div class="product-price">NT$ 280</div></div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">🎐</div>
-                        <div class="product-info">
-                            <div class="product-name">香水風信子</div>
-                            <div class="product-price">NT$ 220</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=narcissus';">
+                        <div class="product-image"><img src="../images/水仙.png" alt="水仙"></div>
+                        <div class="product-info"><div class="product-name">水仙</div><div class="product-price">NT$ 320</div></div>
+                    </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=tulip';">
+                        <div class="product-image"><img src="../images/鬱金香.png" alt="鬱金香"></div>
+                        <div class="product-info"><div class="product-name">鬱金香</div><div class="product-price">NT$ 450</div></div>
+                    </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=hyacinth';">
+                        <div class="product-image"><img src="../images/風信子.png" alt="風信子"></div>
+                        <div class="product-info"><div class="product-name">風信子</div><div class="product-price">NT$ 380</div></div>
+                    </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=pansy';">
+                        <div class="product-image"><img src="../images/三色堇.png" alt="三色堇"></div>
+                        <div class="product-info"><div class="product-name">三色堇</div><div class="product-price">NT$ 150</div></div>
+                    </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=primrose';">
+                        <div class="product-image"><img src="../images/報春花.png" alt="報春花"></div>
+                        <div class="product-info"><div class="product-name">報春花</div><div class="product-price">NT$ 180</div></div>
                     </div>
                 </div>
             </section>
@@ -123,85 +128,39 @@
             <section id="summer" class="category-section">
                 <h2 class="category-title">夏日耐曬 Summer Hardy</h2>
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">🏜️</div>
-                        <div class="product-info">
-                            <div class="product-name">沙漠玫瑰 (花開富貴)</div>
-                            <div class="product-price">NT$ 450</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=golden';">
+                        <div class="product-image"><img src="../images/金琥.png" alt="金琥"></div>
+                        <div class="product-info"><div class="product-name">金琥</div><div class="product-price">NT$ 450</div></div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">🌺</div>
-                        <div class="product-info">
-                            <div class="product-name">九重葛盆栽</div>
-                            <div class="product-price">NT$ 380</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=bunny';">
+                        <div class="product-image"><img src="../images/團扇仙人掌.png" alt="團扇仙人掌"></div>
+                        <div class="product-info"><div class="product-name">團扇仙人掌</div><div class="product-price">NT$ 280</div></div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">🌵</div>
-                        <div class="product-info">
-                            <div class="product-name">大型量天尺仙人掌</div>
-                            <div class="product-price">NT$ 1,200</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=vinca';">
+                        <div class="product-image"><img src="../images/日日春.png" alt="日日春"></div>
+                        <div class="product-info"><div class="product-name">日日春</div><div class="product-price">NT$ 120</div></div>
                     </div>
-                </div>
-            </section>
-
-            <section id="nordic" class="category-section">
-                <h2 class="category-title">療癒北歐白系 Nordic White</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">🤍</div>
-                        <div class="product-info">
-                            <div class="product-name">白水木 (室內馴化)</div>
-                            <div class="product-price">NT$ 2,500</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=desertrose';">
+                        <div class="product-image"><img src="../images/沙漠玫瑰.png" alt="沙漠玫瑰"></div>
+                        <div class="product-info"><div class="product-name">沙漠玫瑰</div><div class="product-price">NT$ 480</div></div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">🏳️</div>
-                        <div class="product-info">
-                            <div class="product-name">白鶴芋 (白掌)</div>
-                            <div class="product-price">NT$ 320</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=chili';">
+                        <div class="product-image"><img src="../images/辣椒.png" alt="辣椒"></div>
+                        <div class="product-info"><div class="product-name">辣椒</div><div class="product-price">NT$ 150</div></div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">⚪</div>
-                        <div class="product-info">
-                            <div class="product-name">銀后虎尾蘭 + 白瓷盆</div>
-                            <div class="product-price">NT$ 580</div>
-                        </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=agave';">
+                        <div class="product-image"><img src="../images/龍舌蘭.png" alt="龍舌蘭"></div>
+                        <div class="product-info"><div class="product-name">龍舌蘭</div><div class="product-price">NT$ 1,500</div></div>
+                    </div>
+                    <div class="product-card" onclick="location.href='product detail/productseasonal.html?id=bougainvillea';">
+                        <div class="product-image"><img src="../images/九重葛.png" alt="九重葛"></div>
+                        <div class="product-info"><div class="product-name">九重葛</div><div class="product-price">NT$ 380</div></div>
                     </div>
                 </div>
             </section>
 
-            <section id="office" class="category-section">
-                <h2 class="category-title">辦公室桌面 Office Desktop</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <div class="product-image">💰</div>
-                        <div class="product-info">
-                            <div class="product-name">招財金錢樹 (桌上型)</div>
-                            <div class="product-price">NT$ 350</div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🎋</div>
-                        <div class="product-info">
-                            <div class="product-name">開運竹 (水培好照顧)</div>
-                            <div class="product-price">NT$ 180</div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🛡️</div>
-                        <div class="product-info">
-                            <div class="product-name">防輻射小仙人掌</div>
-                            <div class="product-price">NT$ 120</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main> </div> <footer>
+        </main>
+    </div> <footer>
         <div class="footer-content">
             <p>© 2024 FLORA. All Rights Reserved.</p>
             <p>用心栽培每一份綠意，溫柔守護每個空間</p>
