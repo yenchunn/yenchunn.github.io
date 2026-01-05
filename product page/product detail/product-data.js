@@ -563,3 +563,4 @@ const products = {
 
         window.onresize = updateCarousel;
 
+
