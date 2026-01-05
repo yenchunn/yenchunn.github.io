@@ -564,3 +564,52 @@ const products = {
         window.onresize = updateCarousel;
 
 
+        function submitReview() {
+           
+            const nameInput = document.getElementById('new-review-name');
+            const ratingInput = document.getElementById('new-review-rating');
+            const textInput = document.getElementById('new-review-text');
+            const reviewList = document.getElementById('reviews-list');
+            const reviewHeader = document.querySelector('.reviews-header');
+
+            const name = nameInput.value.trim();
+            const rating = ratingInput.value;
+            const text = textInput.value.trim();
+
+     
+            if (name === "" || text === "") {
+                alert("請填寫暱稱和評論內容喔！");
+                return;
+            }
+
+         
+            let stars = "";
+            for(let i=0; i<rating; i++) {
+                stars += "⭐";
+            }
+
+            const newReviewHTML = `
+                <div class="review-card" style="animation: fadeIn 0.5s;">
+                    <div>${stars}</div>
+                    <strong>${name}</strong>
+                    <p style="color:#666;">${text}</p>
+                    <small style="color:#999; font-size:0.8rem;">剛剛</small>
+                </div>
+            `;
+
+         
+            reviewList.insertAdjacentHTML('afterbegin', newReviewHTML);
+
+       
+            let currentCountText = reviewHeader.innerText.match(/\d+/); // 抓出數字
+            if (currentCountText) {
+                let newCount = parseInt(currentCountText[0]) + 1;
+                reviewHeader.innerText = `顧客評論 (${newCount})`;
+            }
+
+          
+            nameInput.value = "";
+            textInput.value = "";
+            
+            alert("評論已送出！");
+        }
