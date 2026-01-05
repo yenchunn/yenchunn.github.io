@@ -1,0 +1,94 @@
+.member-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* 左側側邊欄 */
+.member-sidebar {
+    width: 250px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.user-profile-brief {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.avatar {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.member-nav a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+
+.member-nav a:hover, .member-nav a.active {
+    background: #f4f7f4;
+    color: #6B8E23;
+    border-left: 4px solid #6B8E23;
+}
+
+.logout { color: #cc0000 !important; margin-top: 20px; }
+
+/* 右側內容卡片 */
+.member-content {
+    flex: 1;
+}
+
+.content-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    color: #2F5233;
+    font-size: 20px;
+    margin-bottom: 25px;
+    border-left: 5px solid #6B8E23;
+    padding-left: 15px;
+}
+
+/* 資料列表樣式 */
+.info-row { margin-bottom: 15px; font-size: 16px; }
+.info-row label { color: #888; width: 100px; display: inline-block; }
+
+.edit-btn {
+    background: #6B8E23;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* 表格樣式 */
+.member-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.member-table th { text-align: left; padding: 12px; border-bottom: 2px solid #f4f7f4; color: #888; }
+.member-table td { padding: 15px 12px; border-bottom: 1px solid #eee; }
+.status-tag { background: #e8ede7; color: #2F5233; padding: 4px 10px; border-radius: 5px; font-size: 12px; }
+
+/* 評論樣式 */
+.review-item { padding: 20px; border: 1px solid #eee; border-radius: 10px; margin-bottom: 15px; }
+.stars { color: #f1c40f; }
+.review-text { margin: 10px 0; color: #555; }
+.review-date { font-size: 12px; color: #ccc; }
