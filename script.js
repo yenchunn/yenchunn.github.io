@@ -38,10 +38,10 @@ function startAutoPlay() {
         clearInterval(autoPlayInterval);
     }
     
-    // 每 5 秒自動切換到下一張
+    // 每 3 秒自動切換到下一張
     autoPlayInterval = setInterval(() => {
         moveSlide(1);
-    }, 5000); // 5000ms = 5秒
+    }, 3000); // 3000ms = 3秒
 }
 
 // 停止自動輪播
@@ -215,31 +215,32 @@ function validateAndRegister() {
 }
 
 
-function openModal(type) {
-  const title = document.getElementById("modalTitle");
-  const content = document.getElementById("modalContent");
+    function openModal(type) {
+    const title = document.getElementById("modalTitle");
+    const content = document.getElementById("modalContent");
 
-  if (type === "privacy") {
-    title.innerText = "隱私權政策";
-    content.innerHTML = `
-      
-      <p>
-        本網站重視您的隱私權，僅於提供服務之必要範圍內蒐集使用者資料，
-        並採取合理之安全措施進行保護，不會任意提供予第三方。
-      </p>
-    `;
-  } 
-  else if (type === "terms") {
-    title.innerText = "服務條款";
-    content.innerHTML = `
-      <p>
-        使用本網站即表示您同意遵守本平台之所有使用規範，
-        如有違反，本網站有權限制或終止相關服務。
-      </p>
-    `;
-  }
+    if (type === "privacy") {
+        title.innerText = "隱私權政策";
+        content.innerHTML = 
+        '<img src="images/privacy.png"></img>'
+        ;
+    } else if (type === "terms") {
+        title.innerText = "服務條款";
+        content.innerHTML = `
+        <p>
+            使用本網站即表示您同意遵守本平台之所有使用規範，
+            如有違反，本網站有權限制或終止相關服務。
+        </p>
+        `;
+    }
 
-  document.getElementById("modalOverlay").style.display = "block";
-  document.getElementById("modalBox").style.display = "block";
-}
+    document.getElementById("modalOverlay").style.display = "block";
+    document.getElementById("modalBox").style.display = "block";
+    }
+
+    function closeModal() {
+    document.getElementById("modalOverlay").style.display = "none";
+    document.getElementById("modalBox").style.display = "none";
+    }
+
 
