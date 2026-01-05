@@ -423,7 +423,7 @@ const products = {
 
         // --- 展示層架 ---
         "wood_stand_pot": { 
-            name: "簡約白盆木質底座", price: "650", img: "../../images/木質底座.png", 
+            name: "簡約白盆木質底座", price: "650", img: "../../images/木質底座.jpg", 
             desc: "結合了極簡的白色陶瓷盆與溫潤的木質支架，提升植物的視覺高度，讓盆栽瞬間成為空間亮點。<br><br><b>材質：</b> 陶瓷、櫸木<br><b>風格：</b> 北歐極簡<br><b>適用：</b> 龜背芋、琴葉榕等中型植栽。" 
         },
         "metal_stand": { 
@@ -431,23 +431,23 @@ const products = {
             desc: "霧面黑鐵材質，線條俐落穩固，能承重且不易變形，適合搭配工業風或現代簡約風格的居家環境。<br><br><b>材質：</b> 烤漆鐵藝<br><b>特性：</b> 防鏽處理，穩固耐用<br><b>尺寸：</b> 適合直徑 20-25cm 的花盆。" 
         },
         "ladder_shelf": { 
-            name: "階梯層架", price: "1,580", img: "../../images/階梯層架.png", 
+            name: "階梯層架", price: "1,580", img: "../../images/階梯層架.jpg", 
             desc: "靠牆式階梯設計，充分利用垂直空間展示多盆植物，木板層架寬敞，可放置書籍或園藝小物。<br><br><b>材質：</b> 實木、金屬支架<br><b>用途：</b> 植物展示、收納<br><b>安裝：</b> 需簡易組裝。" 
         },
 
         // --- 移動托盤 ---
         "rolling_stand": { 
-            name: "滾輪植物架", price: "550", img: "../../images/滾輪底座.png", 
+            name: "滾輪植物架", price: "550", img: "../../images/滾輪底座.jpg", 
             desc: "附有360度萬向輪，讓沉重的大型盆栽也能輕鬆移動，方便打掃或讓植物追逐陽光。<br><br><b>材質：</b> 強化樹脂 / 實木<br><b>承重：</b> 可承重 50kg<br><b>功能：</b> 附煞車輪，定點穩固不滑動。" 
         },
 
         // --- 牆面裝飾 ---
         "hanging_terracotta": { 
-            name: "陶土串吊盆", price: "390", img: "../../images/陶土串吊盆.png", 
+            name: "陶土串吊盆", price: "390", img: "../../images/陶土串吊盆.jpg", 
             desc: "三個迷你陶盆垂直串聯，充滿波西米亞風情，適合種植多肉或垂墜植物，為牆面增添生動綠意。<br><br><b>材質：</b> 紅陶、麻繩<br><b>排水：</b> 底部有孔<br><b>適用：</b> 綠之鈴、愛之蔓。" 
         },
         "floating_shelf": { 
-            name: "木質一字架", price: "420", img: "../../images/木質一字架.png", 
+            name: "木質一字架", price: "420", img: "../../images/木質一字架.jpg", 
             desc: "隱形支架設計，讓木板彷彿漂浮在牆面上，簡約百搭，適合擺放小盆栽、相框或香氛蠟燭。<br><br><b>材質：</b> 實木拼板<br><b>安裝：</b> 需鑽孔固定<br><b>風格：</b> 日式雜貨、自然風。" 
         },
 
@@ -560,4 +560,5 @@ const products = {
             idx = (idx > 0) ? idx - 1 : cards.length - count;
             updateCarousel();
         };
+
         window.onresize = updateCarousel;
