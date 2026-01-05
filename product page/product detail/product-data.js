@@ -443,7 +443,7 @@ const products = {
 
         // --- 牆面裝飾 ---
         "hanging_terracotta": { 
-            name: "陶土串吊盆", price: "390", img: "../../images/陶土串吊盆.jpg", 
+            name: "陶土串吊盆", price: "390", img: "../../images/陶土串盆吊.png", 
             desc: "三個迷你陶盆垂直串聯，充滿波西米亞風情，適合種植多肉或垂墜植物，為牆面增添生動綠意。<br><br><b>材質：</b> 紅陶、麻繩<br><b>排水：</b> 底部有孔<br><b>適用：</b> 綠之鈴、愛之蔓。" 
         },
         "floating_shelf": { 
@@ -562,3 +562,4 @@ const products = {
         };
 
         window.onresize = updateCarousel;
+
