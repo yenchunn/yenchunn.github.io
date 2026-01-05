@@ -452,7 +452,7 @@ const products = {
         },
 
         "aroma_stone": { 
-            name: "手工擴香石", price: "350", img: "../../images/香氛擴香石.jpg", 
+            name: "手工擴香石", price: "350", img: "../../images/手作乾燥花擴香石.jpg", 
             desc: "以天然石膏粉手工製成，表面保有獨特的氣孔紋理。滴上喜愛的精油，即可讓香氣緩緩散發。<br><br><b>材質：</b> 資生堂石膏粉<br><b>用途：</b> 室內擴香、擺飾<br><b>使用：</b> 滴 3-5 滴精油於表面。" 
         },
         "diffuser_bottle": { 
@@ -629,5 +629,6 @@ const products = {
             textInput.value = "";
             alert("評論發佈成功！謝謝您的分享 ✨");
         }
+
 
 
