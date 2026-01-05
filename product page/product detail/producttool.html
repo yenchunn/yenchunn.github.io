@@ -84,6 +84,27 @@
 
 <div class="reviews-container">
             <h3 class="reviews-header">顧客評論 (4)</h3>
+            <div class="write-review-box">
+                <div class="review-title">🌿 寫下您的植感心得</div>
+                
+                <div class="review-inputs">
+                    <input type="text" id="new-review-name" placeholder="您的暱稱" class="flora-input">
+                    
+                    <div class="select-wrapper">
+                        <select id="new-review-rating" class="flora-select">
+                            <option value="5">⭐⭐⭐⭐⭐ 非常滿意</option>
+                            <option value="4">⭐⭐⭐⭐ 滿意</option>
+                            <option value="3">⭐⭐⭐ 普通</option>
+                            <option value="2">⭐⭐ 尚可</option>
+                            <option value="1">⭐ 不滿意</option>
+                        </select>
+                    </div>
+                </div>
+
+                <textarea id="new-review-text" rows="3" placeholder="這款植物的狀態如何？包裝完整嗎？歡迎分享..." class="flora-textarea"></textarea>
+                
+                <button class="submit-review-btn" type="button" onclick="submitReview()">發佈評論</button>
+            </div>
             <div class="reviews-list" id="reviews-list">
                 <div class="review-card"><div>⭐⭐⭐⭐⭐</div><strong>Mike</strong><p style="color:#666;">噴霧很細緻，拿來澆空鳳剛剛好。</p></div>
                 <div class="review-card"><div>⭐⭐⭐⭐⭐</div><strong>Sarah</strong><p style="color:#666;">鏟子手感很好，挖土很輕鬆。</p></div>
