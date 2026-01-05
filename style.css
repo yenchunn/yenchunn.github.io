@@ -630,6 +630,10 @@ area {
   width: 80%;
   max-width: 600px;
   max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px soild #ccc;
+  padding: 12px;
 
   background: #fff;
   border-radius: 12px;
@@ -638,8 +642,10 @@ area {
   padding: 24px;
   box-sizing: border-box;
 
-  overflow: hidden; /* ⭐ 重要：不讓內容撐爆外框 */
+ 
   z-index: 1001;
+
+
 }
 
 .modal-content {
