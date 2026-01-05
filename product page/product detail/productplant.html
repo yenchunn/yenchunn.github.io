@@ -84,6 +84,21 @@
 
         <div class="reviews-container">
             <h3 class="reviews-header">顧客評論 (4)</h3>
+            <div class="write-review-box">
+                <h4>分享您的心得</h4>
+                <div class="form-group">
+                    <input type="text" id="new-review-name" placeholder="您的暱稱">
+                    <select id="new-review-rating">
+                        <option value="5">⭐⭐⭐⭐⭐ (5分)</option>
+                        <option value="4">⭐⭐⭐⭐ (4分)</option>
+                        <option value="3">⭐⭐⭐ (3分)</option>
+                        <option value="2">⭐⭐ (2分)</option>
+                        <option value="1">⭐ (1分)</option>
+                    </select>
+                </div>
+                <textarea id="new-review-text" rows="3" placeholder="這款植物..." ></textarea>
+                <button class="submit-review-btn" onclick="submitReview()">送出評論</button>
+            </div>
             <div class="reviews-list" id="reviews-list">
                 <div class="review-card"><div>⭐⭐⭐⭐⭐</div><strong>Amy Chen</strong><p style="color:#666;">包裝非常仔細，植物送到時狀況很好！</p></div>
                 <div class="review-card"><div>⭐⭐⭐⭐⭐</div><strong>Jason Wu</strong><p style="color:#666;">出貨速度快，盆器也很有質感。</p></div>
