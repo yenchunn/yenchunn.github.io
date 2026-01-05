@@ -565,52 +565,69 @@ const products = {
 
 
         function submitReview() {
-           
+            // 1. 抓取元素 (使用對應的新 ID)
             const nameInput = document.getElementById('new-review-name');
             const ratingInput = document.getElementById('new-review-rating');
             const textInput = document.getElementById('new-review-text');
             const reviewList = document.getElementById('reviews-list');
             const reviewHeader = document.querySelector('.reviews-header');
 
+            // 檢查是否成功抓到元素 (除錯用)
+            if (!nameInput || !textInput || !reviewList) {
+                console.error("找不到 HTML 元素，請檢查 ID 是否正確！");
+                alert("程式發生錯誤，請檢查 F12 Console");
+                return;
+            }
+
             const name = nameInput.value.trim();
             const rating = ratingInput.value;
             const text = textInput.value.trim();
 
-     
+            // 2. 檢查有沒有填寫
             if (name === "" || text === "") {
-                alert("請填寫暱稱和評論內容喔！");
+                alert("請填寫您的暱稱和心得喔！🌿");
                 return;
             }
 
-         
+            // 3. 產生星星字串
             let stars = "";
             for(let i=0; i<rating; i++) {
                 stars += "⭐";
             }
 
+            // 4. 取得現在日期 (看起來更真實)
+            const today = new Date();
+            const dateStr = today.getFullYear() + '/' + (today.getMonth()+1) + '/' + today.getDate();
+
+            // 5. 建立新評論 HTML (套用動畫)
             const newReviewHTML = `
-                <div class="review-card" style="animation: fadeIn 0.5s;">
-                    <div>${stars}</div>
-                    <strong>${name}</strong>
-                    <p style="color:#666;">${text}</p>
-                    <small style="color:#999; font-size:0.8rem;">剛剛</small>
+                <div class="review-card" style="animation: slideDown 0.5s ease-out;">
+                    <div style="color: #f39c12; margin-bottom:5px;">${stars}</div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <strong style="font-size:1.05rem;">${name}</strong>
+                        <span style="font-size:0.85rem; color:#999;">${dateStr}</span>
+                    </div>
+                    <p style="color:#555; line-height:1.6; margin-top:8px;">${text}</p>
                 </div>
             `;
 
-         
+            // 6. 插入到列表最上方
             reviewList.insertAdjacentHTML('afterbegin', newReviewHTML);
 
-       
-            let currentCountText = reviewHeader.innerText.match(/\d+/); // 抓出數字
-            if (currentCountText) {
-                let newCount = parseInt(currentCountText[0]) + 1;
-                reviewHeader.innerText = `顧客評論 (${newCount})`;
+            // 7. 更新標題數字
+            if (reviewHeader) {
+                let currentText = reviewHeader.innerText;
+                let numberMatch = currentText.match(/\d+/);
+                if (numberMatch) {
+                    let newCount = parseInt(numberMatch[0]) + 1;
+                    reviewHeader.innerText = `顧客評論 (${newCount})`;
+                }
             }
 
-          
+            // 8. 清空並給予回饋
             nameInput.value = "";
             textInput.value = "";
-            
-            alert("評論已送出！");
-        };
+            alert("評論發佈成功！謝謝您的分享 ✨");
+        }
+
 
