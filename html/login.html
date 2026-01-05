@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>會員進入 | FLORA</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body class="login-page-bg">
+    <div class="login-wrapper">
+        <div class="login-brand">
+            <img src="../images/LOGO.png" alt="FLORA">
+            <p>用心栽培每一份綠意</p>
+        </div>
+
+        <div class="login-box">
+            <h2 id="auth-title" class="login-tab-title">會員登入</h2>
+            
+            <form id="login-form">
+                <div class="input-group">
+                    <label>帳號 / Email</label>
+                    <input type="email" id="login-email" placeholder="flora@example.com">
+                </div>
+                <div class="input-group">
+                    <label>密碼</label>
+                    <input type="password" id="login-password" placeholder="請輸入密碼">
+                </div>
+                <button type="button" class="auth-btn" onclick="validateAndLogin()">立即登入</button>
+            </form>
+        
+            <form id="register-form" style="display: none;">
+                <div class="input-group">
+                    <label>姓名</label>
+                    <input type="text" id="reg-name" placeholder="您的姓名">
+                </div>
+                <div class="input-group">
+                    <label>電子郵件</label>
+                    <input type="email" id="reg-email" placeholder="flora@example.com">
+                </div>
+                <div class="input-group">
+                    <label>聯絡電話</label>
+                    <input type="tel" id="reg-phone" placeholder="0912-345-678">
+                </div>
+                <div class="input-group">
+                    <label>聯絡地址</label>
+                    <input type="text" id="reg-address" placeholder="請輸入收件地址">
+                </div>
+                <div class="input-group">
+                    <label>設定密碼</label>
+                    <input type="password" id="reg-password" placeholder="至少 8 位字元">
+                </div>
+                <button type="button" class="auth-btn" onclick="validateAndRegister()">確認註冊</button>
+            </form>
+        
+            <div class="auth-footer">
+                <span id="footer-text">還不是會員？</span>
+                <a href="javascript:void(0)" id="switch-auth" class="switch-link">點此註冊</a>
+            </div>
+        </div>
+    <script src="../JS/login.js"></script>
+</body>
+</html>
