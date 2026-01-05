@@ -40,10 +40,47 @@
         @media (max-width: 900px) {
             .product-main-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
             .p-image, .p-name, .p-desc, .p-actions { grid-column: 1 / -1; }
-            .p-name { grid-row: 2; } .p-desc { grid-row: 4; } .p-actions { grid-row: 5; }
+            .p-name { grid-row: 3; } .p-desc { grid-row: 4; } .p-actions { grid-row: 5; }
             .p-price { grid-column: 1 / -1; grid-row: 3; justify-content: flex-start; padding-top: 10px; }
             .reviews-list { grid-template-columns: 1fr; }
             .mini-card { flex: 0 0 calc((100% - 20px) / 2); }
+        }
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            nav ul {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            nav ul {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-content {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth; 
         }
 
         /* --- Flora 評論區塊風格 --- */
