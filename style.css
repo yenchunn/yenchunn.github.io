@@ -448,27 +448,34 @@ area {
             opacity: 1;
         }
 
-        /* 響應式設計 */
-        @media (max-width: 1024px) {
+         @media (max-width: 1024px) {
+
             .product-grid {
+
                 grid-template-columns: repeat(3, 1fr);
+
             }
+
             
+
             nav ul {
+
                 gap: 30px;
+
             }
+
         }
 
+
+
         @media (max-width: 768px) {
+
             .product-grid {
+
                 grid-template-columns: repeat(2, 1fr);
+
             }
-            
-            nav ul {
-                gap: 10px; 
-                font-size: 14px; 
-            }
-            
+
             .hero h1 {
                 font-size: 36px;
             }
@@ -478,15 +485,19 @@ area {
             }
         }
 
+
+
         @media (max-width: 480px) {
             .product-grid {
                 grid-template-columns: 1fr;
             }
         }
 
+
+
         html {
             scroll-behavior: smooth; 
-        }
+        } 
 
         .main-layout {
             display: flex;
