@@ -465,7 +465,8 @@ area {
             }
             
             nav ul {
-                display: none;
+                gap: 10px; 
+                font-size: 14px; 
             }
             
             .hero h1 {
