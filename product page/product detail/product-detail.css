@@ -40,8 +40,8 @@
         @media (max-width: 900px) {
             .product-main-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
             .p-image, .p-name, .p-desc, .p-actions { grid-column: 1 / -1; }
-            .p-name { grid-row: 1; } .p-desc { grid-row: 4; } .p-actions { grid-row: 5; }
-            .p-price { grid-column: 1 / -1; grid-row: 3; justify-content: flex-start; padding-top: 10px; }
+            .p-name { grid-row: 3; } .p-desc { grid-row: 5; } .p-actions { grid-row: 6; }
+            .p-price { grid-column: 1/ -1; grid-row: 4; justify-content: flex-start; padding-top: 10px; }
             .reviews-list { grid-template-columns: 1fr; }
             .mini-card { flex: 0 0 calc((100% - 20px) / 2); }
         }
