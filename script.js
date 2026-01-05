@@ -222,8 +222,7 @@ function openModal(type) {
   if (type === "privacy") {
     title.innerText = "隱私權政策";
     content.innerHTML = `
-      <img src="images/privacy.png" class="policy-img">
-      <img src="images/privacy2.png" class="policy-img">
+      
       <p>
         本網站重視您的隱私權，僅於提供服務之必要範圍內蒐集使用者資料，
         並採取合理之安全措施進行保護，不會任意提供予第三方。
