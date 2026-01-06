@@ -8,7 +8,7 @@ const CART_KEY = "flora_cart";
 ====================== */
 function fixImagePath(path) {
   if (!path) return "";
-  return path.replace("../../images/", "./images/");
+  return path.replace("../../images/", "../images/");
 }
 
 // 讀取購物車
